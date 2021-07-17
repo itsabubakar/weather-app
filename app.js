@@ -19,7 +19,7 @@ async function getLocationInfo() {
   try {
     const keyTerm = input.value.toLowerCase();
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${keyTerm}&APPID=305abaa7c0a8c3a71746baf32e308582`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${keyTerm}&APPID=305abaa7c0a8c3a71746baf32e308582`,
       { mode: "cors" }
     );
     const weatherData = await response.json();
